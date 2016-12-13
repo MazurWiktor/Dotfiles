@@ -1,0 +1,55 @@
+source ~/.vim/plugins.vim
+source ~/.vim/layout.vim
+source ~/.vim/functions.vim
+
+"Reload vimrc
+map <leader>rr :source ~/.vimrc<CR>
+
+"Vim basic
+let g:mapleader = ','
+let mapleader = ','
+
+set history=10000
+set relativenumber
+set mouse=a
+set clipboard=unnamed
+
+set gcr=a:blinkon0
+set laststatus=2
+set splitright
+set splitbelow 
+
+"Tab controll
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+"Search defaults
+set ignorecase
+set smartcase
+set hlsearch
+set incsearch
+set nolazyredraw
+
+"Syntax
+syntax on
+syntax enable
+
+"General mappings
+nmap <leader><space> :nohl<CR>
+nmap <leader>, :w<cr>
+
+nnoremap th  :tabfirst<CR>
+nnoremap tj  :tabnext<CR>
+nnoremap tk  :tabprev<CR>
+nnoremap tl  :tablast<CR>
+nnoremap tt  :tabedit<Space>
+nnoremap tn  :tabnext<Space>
+nnoremap tm  :tabm<Space>
+nnoremap td  :tabclose<CR>
+
+"Improved switching window
+nmap <C-h> <C-w>h
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <C-l> <C-w>l
