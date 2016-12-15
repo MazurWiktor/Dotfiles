@@ -24,7 +24,7 @@ let g:ycm_rust_src_path = '/home/wiktor/bin/rustc-1.12.0/src' "YCM SUPPORT
 Plugin 'vim-ruby/vim-ruby'
 
 "Vim management
-
+Plugin 'Lokaltog/vim-powerline'
 Plugin 'scrooloose/nerdtree'
 map <C-t> :NERDTreeToggle<CR>
 let NERDTreeHijackNetrw=1 "Put Nerdtree into a window
